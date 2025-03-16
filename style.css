@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color-primary: #000000; 
+    --color-secondary: #171792;
+    --color-tertiary: #FF7575; 
+    --color-quaternary: #EF8000;
+    --color-button-hover: #090C3C;
+    --color-white: #F6F6F6;
+    --color-shadow: #060234; 
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header{
+    background-color: var(--color-primary);
+    padding:5%;
+    color: var(--color-white);
+    text-align: center;
+    font-family: "Krona one", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+    border-radius:0px 0px 10px 10px;
+    
+}
+
+body {
+    background-image: url(https://previews.123rf.com/images/pacifica23/pacifica231610/pacifica23161000008/64537295-vacaciones-de-fondo-sin-fisuras-con-cajas-de-regalo-dibujado-a-mano-doodle-de-papel-tapiz.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Krona one", sans-serif;
+    color: var(--color-primary);
+    row-gap: 2rem;
+    box-sizing: border-box;
+    min-height: auto;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--color-white); 
+    border-radius: 10%;
+    box-shadow: 0 10px 30px var(--color-shadow);
+    backdrop-filter: blur(0px);
+    margin-top: 20px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--color-primary); 
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    width: 100%;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.banner-image {
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 2.5rem;
+    font-family: "Krona one", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    padding: 1%;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+/* Sección de ingreso de nombres */
+.input-section {
+   
+    background-color: var(--color-secondary); 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    border-radius: 0% 0% 10% 10%;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 70%;
+    padding: 1%;
+    border: 2px solid var(--color-primary);
+    border-radius: 25px 0 0 25px;
+    font-size: 0.75rem;
+    font-family: "Krona one", serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-name:focus {
+    border-color: var(--color-primary);
+}
+
+.button-add {
+    width: 40%;
+    padding: 2%;
+    background-color: var(--color-primary); 
+    color: var(--color-white);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    font-size: 1rem;
+    font-family: "Krona one", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-add:hover {
+    background-color: var(--color-quaternary);
+    border:2px solid var(--color-primary);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.count-list {
+    padding: 10px 20px;
+    color: var(--color-white)
+}
+.name-list li {
+    background-color: var(--color-white); 
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-list {
+    margin-top: 20px;
+    color: var(--color-primary); 
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sorteo */
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 20px;
+    background-color: var(--color-primary); 
+    color: var(--color-white);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: "Krona one", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button-draw img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-quaternary);
+    border:2px solid var(--color-primary);
+}
+
+/* Estilo para el botón deshabilitado */
+.button-draw:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Estilo para resaltar el botón de reinicio */
+#reiniciar.resaltado {
+    background-color: var(--color-quaternary);
+    color: #000000;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.footer{
+    background-color: var(--color-primary);
+    padding:1%;
+    color: var(--color-white);
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Animación para resaltar el último nombre agregado */
+@keyframes resaltar {
+    0% { background-color: var(--color-quaternary); }
+    100% { background-color: transparent; }
+}
+
+.resaltado {
+    animation: resaltar 1s ease-in-out;
+}
+
+@media (max-width: 1200px){
+    .Header{
+        width: auto;
+    }
+    .main-content{
+        width: auto;
+    }
+}
